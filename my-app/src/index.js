@@ -7,7 +7,7 @@ import { Container, Header, Image, Menu, Icon, Dropdown, Grid, List } from 'sema
 class TopMenu extends React.Component {
   render() {
     return (
-        <Menu borderless className="topmenu">
+        <Menu borderless style = {{border: "none"}} className="topmenu" >
         <Container>
         <Menu.Item><Image style={{height: "35px"}} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABQVBMVEX////qQzU0qFNChfT7vAU9g/RomvYvfPP2+v/X4/
     z7uQD7twDqQTL/vQDqPzAvp1AopUvpNyYUoUA3gPTpMiDpOSn85OPe7+LpLRlDgv38wQAho0eSy5/62df1sq7oKxXxjYfylpDpOzf80XL+8tfS6dcap1YzqkIzqUqq1rT98vH+9vX3wr/zpKDwhn/ucmnsVkvtZFrvfXXrSz793p38zWPr8v6pw/mHrvf946///PH+7Mj81HqZufj7xj+/
@@ -73,7 +73,7 @@ class Middle extends React.Component {
     Our most helpful phone yet
     </Header>
     <Header style = {{color: "gray"}} as="h2">
-    <button style = {{color: "blue"}} >Buy now  </button>From $799
+    <button style = {{color: "#4285f4"}}>Buy now</button>From $799
     </Header>
     </Container>
           </Grid.Column>

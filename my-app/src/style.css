@@ -6,6 +6,11 @@
   border: none;
 }
 
+.ui.TopMenu {
+  box-shadow: none;
+  border: none;
+}
+
 .ui.fitted.left.image {
   height: 33px;
   width: 33px;
@@ -86,6 +91,7 @@
   background: url(https://lh3.googleusercontent.com/RttE0_BJF5gl9wdzHjMUiu_u_qW1wNymqCsGWx2zK6o3Y57upxox4EEb1HIgiXkuOEyV242A6PgGhRnVSpcP3g=rw-w1830);
   background-size: cover;
   height: 700px;
+  background-color: gray;
   color: white;
 }
 .search {
