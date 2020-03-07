@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
 import 'semantic-ui-css/semantic.min.css';
-import { Container, Header, Image, Menu, Icon, Dropdown, Grid, List } from 'semantic-ui-react';
+import { Container, Header, Image, Menu, Icon, Dropdown, Grid, List, paragraph } from 'semantic-ui-react';
 
 class TopMenu extends React.Component {
   render() {
@@ -22,13 +22,16 @@ class TopMenu extends React.Component {
         <Dropdown position="fitted left" item text="Phones">
           <Dropdown.Menu>
             <Dropdown.Item>Pixel 4</Dropdown.Item>
+            <Dropdown.Item>Pixel 3</Dropdown.Item>
             <Dropdown.Item>Pixel 3a</Dropdown.Item>
-          </Dropdown.Menu>
+             <Dropdown.Item>Compare Phones</Dropdown.Item>
+    </Dropdown.Menu>
         </Dropdown>
         <Dropdown item text="Connected Home">
           <Dropdown.Menu>
         <   Dropdown.Item>nest Mini 2</Dropdown.Item>
             <Dropdown.Item>nest hub max</Dropdown.Item>
+    <Dropdown.Item>nest hub </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
     <Menu.Item>Gaming</Menu.Item>
@@ -36,12 +39,14 @@ class TopMenu extends React.Component {
         <Dropdown.Menu>
         <Dropdown.Item>pixelbook Menu</Dropdown.Item>
     <Dropdown.Item>pixelbook go Menu</Dropdown.Item>
+    <Dropdown.Item>pixelbook slate Menu</Dropdown.Item>
     </Dropdown.Menu>
     </Dropdown>
     <Dropdown item text="Accessories">
         <Dropdown.Menu>
           <Dropdown.Item>Pixel stand Menu</Dropdown.Item>
           <Dropdown.Item>Pixel buds Menu</Dropdown.Item>
+    <Dropdown.Item>Pixel case Menu</Dropdown.Item>
         </Dropdown.Menu>
     </Dropdown>
     <Menu.Item>Special Offers</Menu.Item>
@@ -65,15 +70,17 @@ class Middle extends React.Component {
         <Grid container verticalAlign="middle" style={gridStyle}>
         <Grid.Row columns="two">
           <Grid.Column>
-        <Container className="buy" position ="left" textAlign="center">
-    <Header style = {{color: "gray"}} as="h1" >
-    Meet Pixel 4
-    </Header>
-    <Header style = {{color: "gray"}} as="h2">
+        <Container className="buy" position ="left" textAlign="left">
+    <p className = "h1"style = {{color: "gray"}} as="h1" >
+    Meet  Pixel  4.
+    </p>
+    <p className = "h2" style = {{color: "gray"}} as="h2">
     Our most helpful phone yet
-    </Header>
+    </p>
     <Header style = {{color: "gray"}} as="h2">
-    <button style = {{color: "#4285f4"}}>Buy now</button>From $799
+        <div>
+    <button style = {{color: "#4285f4"}}>Buy now</button>  From $799
+        </div>
     </Header>
     </Container>
           </Grid.Column>
